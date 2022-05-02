@@ -1,0 +1,153 @@
+.center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.container{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    max-height: 600px;
+    max-width: 1000px;
+}
+
+.sidebar{
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+    padding: 42px;
+    background: white ;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+}
+
+.list-container{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    padding: 42px;
+    background: rgb(241, 239, 239);
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px ;
+}
+
+.title{
+    font-family: 'Lato';
+    font-size: 28px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.list-menu{
+    display: flex;
+    flex-direction: column;
+    margin-top: 15px;
+    flex-grow: 1;
+}
+
+
+.list-menu-item{
+    display: flex;
+    align-items: center;
+    padding: 10px 15px;
+    border-radius: 5px;
+    width: 100%;
+    color: #5f5f5f;
+    margin-bottom: 5px;
+    text-decoration: none;
+}
+
+.list-menu-item:hover{
+    background: #f8f8f8;
+}
+
+.is-active{
+    background-color: #90e0ef;
+    color: #0077b6;
+}
+
+.btn{
+    padding: 13px;
+    color: white;
+    background:  #90e0ef;
+    border: none;
+    border-radius: 8px;
+    font-size: 15px;
+
+}
+
+.task{
+    display: flex;
+    background: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+
+.circle{
+    position: absolute;
+    bottom: 35px;
+    right: 35px;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.plus{
+    font-size: 20px;
+}
+
+.completed .task-text{
+    text-decoration: line-through;
+    opacity: 0.8;
+}
+
+.titl{
+    font-size: 20px;
+    color: #888;
+    text-align: center;
+    font-family: 'Lato';
+}
+
+.top-bar{
+    display: flex;
+}
+
+.top-bar .title{
+    flex-grow: 1;
+}
+
+.set{
+    margin: 25px;
+}
+
+.bt{
+    border: none;
+    cursor: pointer;
+}
+
+.task .task-text{
+    flex-grow: 1 ;
+}
+
+
+.task-buttons{
+    margin-top: 10px;
+}
+
+.sett{
+    margin: 8px;
+}
+
+.btt{
+    background: none;
+    border: none;
+    cursor: pointer;
+}

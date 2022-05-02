@@ -1,0 +1,15 @@
+/* You can add global styles to this file, and also import other style files */
+
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Nunito:wght@400;700&display=swap');
+
+
+
+html{
+    background: linear-gradient(to right top , #03045e, #023e8a , #0077b6 , #0096c7 , #00b4d8 , #48cae4  );
+}
+
+
+html , body{
+    height: 100%;
+}

@@ -1,0 +1,50 @@
+.center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.login-box{
+    padding: 35px;
+    background-color: white;
+    border-radius: 5px;
+}
+
+.title{
+    font-family: 'Lato';
+    font-size: 26px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #44ddd0;
+}
+
+.input{
+    margin-left: 10px;
+    border: none;
+    box-shadow:
+       inset 0 -3em 3em rgba(101, 118, 107, 0.1),
+             0 0  0 2px rgb(255,255,255),
+             0.3em 0.3em 1em rgba(236, 242, 239, 0.74);
+    padding: 10px;
+    font-size: 15px;
+    font-family: 'Lato';
+}
+
+.icon{
+    float: left;
+    margin-top: 10px;
+}
+
+.button{
+    float: right;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    background: #44ddd0;
+    font-size: 13px;
+    cursor: pointer;
+    color: white;
+    letter-spacing: 0.8px;
+}

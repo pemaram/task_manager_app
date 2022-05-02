@@ -1,0 +1,50 @@
+.center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+
+.modal-box{
+    min-height: 200px;
+    width: 100%;
+    max-width: 500px;
+    background-color:white ;
+    border-radius: 5px;
+    padding: 25px;
+}
+
+
+.input{
+    margin-left: 10px;
+    border: none;
+    box-shadow:
+       inset 0 -3em 3em #caf0f8,
+             0 0  0 2px rgb(255,255,255),
+             0.3em 0.3em 1em #ade8f4;
+    padding: 10px;
+    font-size: 15px;
+    font-family: 'Lato';
+}
+
+.control{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.btn{
+    margin: 5px 15px 0 30px;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    background: #90e0ef;
+    font-size: 13px;
+    cursor: pointer;
+    color: white;
+}
+
+
+

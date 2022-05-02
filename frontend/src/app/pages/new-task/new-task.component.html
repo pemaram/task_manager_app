@@ -1,0 +1,13 @@
+<div class="center">
+    <div class="modal-box">
+        <h1 class="title">Create New Task</h1>
+
+        
+                <input #taskTitleInput class="input" type="text" placeholder="Add Task Here...." size="55" height="60">
+                <br>
+                <div class="control">
+                    <button class="btn" (click) ="createTask(taskTitleInput.value)">Create</button>
+                    <button routerLink='/' class="btn">Go Back</button>
+                </div>
+    </div>
+</div>

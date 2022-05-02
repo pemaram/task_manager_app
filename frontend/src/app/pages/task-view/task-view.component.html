@@ -1,0 +1,45 @@
+<div class="center">
+    <div class="container">
+        <div class="sidebar">
+            <h1 class="title">
+                Lists
+            </h1>
+            <div class="list-menu">
+                <a class="list-menu-item" *ngFor = "let list of lists" [routerLink]="['/lists',list._id]" routerLinkActive="is-active" >
+                    <p>{{list.title}}</p>
+                </a> 
+            </div>
+            <button class="btn" routerLink = '/new-list'>+ New List</button>
+        </div>
+
+        <div class="list-container">
+            <div *ngIf="tasks">
+                <div class="top-bar">
+                    <h1 class="title">Tasks</h1>
+                    <div class="button">
+                            <button class="bt" [routerLink]="['/edit',selectedListId]"><i class="fas fa-solid fa-pen set"></i></button>
+                            <button class="bt" (click) ="onDelete()"><i class="fas fa-solid fa-trash set" style="color: red;"></i></button>
+                        </div>
+                </div>
+
+            <div class="task" *ngFor="let task of tasks" (click)="onTaskclick(task)" [ngClass]="{ 'completed' : task.completed }">
+               <div class="task-text">
+                    <p>{{task.title}}</p>
+               </div>
+                <div class="task-buttons">
+                    <button class="btt" [routerLink]="['/lists',selectedListId , 'edittask' , task._id]"><i class="fas fa-solid fa-pen sett" ></i></button>
+                    <button class="btt" (click) ="onTaskDelete(task._id)"><i class="fas fa-solid fa-trash sett" style="color: red;"></i></button>
+                </div>
+            </div>
+                <h3 class="titl" *ngIf="tasks.length ===0">There are no tasks here! Click  the add button to create a new task</h3>
+                <button class="circle btn" routerLink="./new-task">
+                <span class="plus">&#43;</span>
+                </button>
+            </div>
+
+            <div *ngIf="!tasks">
+                <h3 class="titl">Please select a list from the sidebar</h3>
+            </div>
+        </div>
+    </div>
+</div>
